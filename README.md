@@ -61,6 +61,27 @@ conferencedb = {
 }
 ```
 
+```
+docker-compose -f /Users/sriharitummala/Documents/postgresdocker/docker-compose.yml up
+```
+
+```
+   POSTGRES_USER: 'user'
+    POSTGRES_PASSWORD: 'password'
+    POSTGRES_DB: 'accounts'
+```
+
+```
+docker exec -it postgres:9.6-alpine /bin/bash
+
+docker exec -it fa8510507614 /bin/bash
+
+```
+
+```
+psql -h localhost -U user -d accounts
+```
+
 To Switch to newly created database:
 ```
 > \c pgcontestdb trustworthy
